@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ListAnimalsRoutingModule } from './list-animals-routing.module';
 import { ListAnimalsComponent } from './list-animals.component';
-import {AngularMaterialModule} from '../../../angular-material.module';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import {AngularMaterialModule} from '../../../angular-material.module';
   imports: [
     CommonModule,
     ListAnimalsRoutingModule,
-    AngularMaterialModule
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class ListAnimalsModule { }
